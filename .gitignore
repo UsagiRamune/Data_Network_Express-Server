@@ -1,1 +1,45 @@
-node_modules/
+# ======================== Secrets & Configs =========================
+# ไฟล์กุญแจลับ ห้ามเอาขึ้นเด็ดขาด! ตัวปัญหาของเราเลย
+serviceAccountKey.json
+
+# ไฟล์เก็บ Environment Variables ทั้งหลายแหล่
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# ========================== Dependencies ============================
+# โฟลเดอร์นรกที่เก็บ library ทั้งหมด ไม่ต้องเอาขึ้นเพราะสั่ง npm install ใหม่ได้
+/node_modules
+
+
+# ============================== Logs ================================
+# ไฟล์ log ที่เกิดตอนรันหรือตอนพัง ไม่ต้องเก็บ
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ============================ Production ============================
+# โฟลเดอร์ที่เกิดจากการ build โปรเจกต์
+/build
+/dist
+
+
+# ====================== OS & Editor Specific ========================
+# ไฟล์ขยะจาก OS
+.DS_Store
+Thumbs.db
+
+# ไฟล์ตั้งค่าของ Editor ไม่ต้องแชร์กับคนอื่น
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
